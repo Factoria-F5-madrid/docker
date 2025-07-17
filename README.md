@@ -154,7 +154,7 @@ Este comando ejecuta el contenedor en segundo plano (-d), asigna el nombre mi-co
 
 En Docker Compose, un servicio es una definición que describe un contenedor que deseas ejecutar. Cada servicio corresponde a un contenedor, y en el archivo docker-compose.yaml, puedes definir varios servicios para que trabajen juntos como parte de una aplicación más grande
 
-Cuando ejecutas `docker-compose up` o `docker compose up --build`, Docker Compose realiza las siguientes tareas: Crea y ejecuta los contenedores para cada servicio, Asigna una red. Monta volúmenes y expone puertos.
+Cuando ejecutas `docker-compose up` o `docker compose up --build` (Fuerza la reconstrucción de las imágenes antes de levantar los contenedores), Docker Compose realiza las siguientes tareas: Crea y ejecuta los contenedores para cada servicio, Asigna una red. Monta volúmenes y expone puertos.
 
 Ejemplo de Docker compose:
 
