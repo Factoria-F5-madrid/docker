@@ -51,9 +51,9 @@ Entre las funciones de Docker Desktop está construir imágenes Docker desde un 
 
 - **[Docker Hub](https://hub.docker.com/)**: Es el repositorio oficial donde se almacenan y comparten imágenes de Docker. Los usuarios pueden descargar imágenes públicas o almacenar las suyas propias. Es un recurso clave para obtener imágenes oficiales de sistemas operativos, aplicaciones y servicios. Su función es similar a un repositorio de código como GitHub o GitLab. Docker Hub nos permite:
 
--- Almacenar y compartir imágenes Docker públicamente o de manera privada.
--- Distribuir tus imágenes a otras personas o sistemas (en un entorno de producción, CI/CD, etc.)
--- Descargar imágenes preconstruidas de aplicaciones populares (Nginx, Redis, MongoDB, Node.js, etc.), que puedes usar como base para tus propios contenedores
+- Almacenar y compartir imágenes Docker públicamente o de manera privada.
+- Distribuir tus imágenes a otras personas o sistemas (en un entorno de producción, CI/CD, etc.)
+- Descargar imágenes preconstruidas de aplicaciones populares (Nginx, Redis, MongoDB, Node.js, etc.), que puedes usar como base para tus propios contenedores
 
 <kbd><img src="https://jorgebenitezlopez.com/github/dockerhub.png" style="border:1px solid grey"></kbd>
 
