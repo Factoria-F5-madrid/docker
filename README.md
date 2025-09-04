@@ -125,6 +125,12 @@ Entre las funciones de Docker Desktop está construir imágenes Docker desde un 
   <img src="./img/flujodocker.png" style="width: 100%">
 </p>
 
+Son 3 pasos: 
+
+>1. **Crear un Dockerfile**  
+>2. **Construir la imagen**  a partir del dockerfile con `docker build`
+>3. **Levantar un contenedor**  de la imagen creada con `docker run` 
+
 El flujo de trabajo en Docker sigue varios pasos clave que van desde la creación de una imagen hasta la ejecución de un contenedor. A continuación, te explicamos el proceso paso a paso, además de algunos conceptos relacionados con la configuración de variables y el ciclo de vida de los contenedores.
 
 ### 4.1. Creación del Dockerfile
