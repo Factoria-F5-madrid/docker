@@ -34,17 +34,24 @@
 
 
 ¿Todavía con dudas? quizás esta métafora te pueda ayudar...
-### 🧙‍♂️ Cápsula del tiempo
-> 
-> Docker es como una cápsula del tiempo que congela tu aplicación con todo lo necesario para que siempre funcione igual, aquí o en cualquier otro sitio.
 
->  - Guarda no solo tu código, sino también el sistema operativo base, librerías, runtimes y dependencias.
-> - Esa “foto” (la imagen) siempre se comportará igual, sin importar si pasan meses o años.
-> - Cuando corres el contenedor, básicamente “revives” ese mismo entorno exacto en el que funcionaba tu proyecto.
+<details>
+  <summary> 
 
-> 👉 La diferencia con una máquina virtual es que Docker no “congela” un ordenador entero con su kernel, sino que empaqueta solo lo necesario para tu app 💁‍♂️mucho más ligero y portátil.
+  ### 🧙‍♂️ Cápsula del tiempo
+  </summary>
 
+    
+  > 
+  > Docker es como una cápsula del tiempo que congela tu aplicación con todo lo necesario para que siempre funcione igual, aquí o en cualquier otro sitio.
+  
+  >  - Guarda no solo tu código, sino también el sistema operativo base, librerías, runtimes y dependencias.
+  > - Esa “foto” (la imagen) siempre se comportará igual, sin importar si pasan meses o años.
+  > - Cuando corres el contenedor, básicamente “revives” ese mismo entorno exacto en el que funcionaba tu proyecto.
+  
+  > 👉 La diferencia con una máquina virtual es que Docker no “congela” un ordenador entero con su kernel, sino que empaqueta solo lo necesario para tu app 💁‍♂️mucho más ligero y portátil.
 
+</details>
 
 ## 2. Instalaciones
 
@@ -94,11 +101,18 @@ Entre las funciones de Docker Desktop está construir imágenes Docker desde un 
 >
 > El `contenedor` es el delicioso manjar.
 
-🚨 🚨 ¿Si lo relacionamos con POO, qué sería una clase y qué sería un objeto? 🚨 🚨
+<details>
+  <summary> 
+    
+  ### 🤷‍♂️¿Si lo relacionamos con POO, qué sería una clase y qué sería un objeto?
+  </summary>
+  
+  
+ - 💾 **Volúmenes** : Los volúmenes en Docker se utilizan para persistir datos más allá del ciclo de vida de los contenedores, los cuales son efímeros y pueden ser eliminados fácilmente. Los volúmenes permiten que los datos persistan incluso después de que el contenedor haya sido destruido. Además, también se pueden utilizar para mapear código entre el sistema anfitrión y el contenedor, lo que facilita la edición en tiempo real dentro del contenedor.
 
-💾 **Volúmenes**: Los volúmenes en Docker se utilizan para persistir datos más allá del ciclo de vida de los contenedores, los cuales son efímeros y pueden ser eliminados fácilmente. Los volúmenes permiten que los datos persistan incluso después de que el contenedor haya sido destruido. Además, también se pueden utilizar para mapear código entre el sistema anfitrión y el contenedor, lo que facilita la edición en tiempo real dentro del contenedor.
+- 📜 **Docker Compose**: Docker Compose es una herramienta que permite definir y ejecutar aplicaciones multicontenedor. Se utiliza un archivo `docker-compose.yml` para configurar los servicios de una aplicación, como bases de datos, servidores, etc., y luego se ejecutan con un solo comando.
 
-📜 **Docker Compose**: Docker Compose es una herramienta que permite definir y ejecutar aplicaciones multicontenedor. Se utiliza un archivo `docker-compose.yml` para configurar los servicios de una aplicación, como bases de datos, servidores, etc., y luego se ejecutan con un solo comando.
+</details>
 
 🚨 🚨 ¿Sabemos qué es una imagen, un contenedor, un volumen y lo que hace el docker compose? 🚨 🚨
 
