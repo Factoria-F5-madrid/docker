@@ -31,6 +31,21 @@
 
 🚨 ¿Entendemos para qué sirve? ¿Qué puede pasar en el caso de no usar? ¿Qué se usaba antes? 🚨
 
+
+
+¿Todavía con dudas? quizás esta métafora te pueda ayudar...
+### 🧙‍♂️ Cápsula del tiempo
+> 
+> Docker es como una cápsula del tiempo que congela tu aplicación con todo lo necesario para que siempre funcione igual, aquí o en cualquier otro sitio.
+
+>  - Guarda no solo tu código, sino también el sistema operativo base, librerías, runtimes y dependencias.
+> - Esa “foto” (la imagen) siempre se comportará igual, sin importar si pasan meses o años.
+> - Cuando corres el contenedor, básicamente “revives” ese mismo entorno exacto en el que funcionaba tu proyecto.
+
+> 👉 La diferencia con una máquina virtual es que Docker no “congela” un ordenador entero con su kernel, sino que empaqueta solo lo necesario para tu app 💁‍♂️mucho más ligero y portátil.
+
+
+
 ## 2. Instalaciones
 
 ### Instalar Docker en varios sistemas operativos
