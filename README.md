@@ -92,7 +92,15 @@ Entre las funciones de Docker Desktop está construir imágenes Docker desde un 
 
 📦 **Contenedores**: Un contenedor es una instancia en ejecución de una imagen. Es el entorno aislado en el que se ejecuta la aplicación. Cada contenedor tiene su propio sistema de archivos, procesos, redes y espacio de CPU/memoria. Piensa en el contenedor como una "caja" donde vive y se ejecuta la aplicación, separada del resto del sistema.
 
-> [!WARNING]
+¿Todavía con dudas? quizás esta métafora te pueda ayudar...
+<details>
+  <summary> 
+    
+  ### 🥣 Metáfora Cocina
+  </summary> 
+
+  
+
 > Es habitual que se confundan los términos de imágen y contenedor e incluso usarse únicamente el término contenedor para hacer referencia a ambos. Pero la realidad es que nunca se puede construir un contenedor o descargar uno, ya que los contenedores solo existen durante el tiempo de ejecución. Las imágenes, por otro lado, son archivos inmutables: no puedes editar una imagen después de haberla creado. 
 >
 > 🚨 🚨 **Metáfora de la cocina** 🚨 🚨
@@ -100,7 +108,7 @@ Entre las funciones de Docker Desktop está construir imágenes Docker desde un 
 > La `imagen` es un plato pre-cocinado y congelado.
 >
 > El `contenedor` es el delicioso manjar.
-
+</details>
 <details>
   <summary> 
     
@@ -113,7 +121,6 @@ Entre las funciones de Docker Desktop está construir imágenes Docker desde un 
 - 📜 **Docker Compose**: Docker Compose es una herramienta que permite definir y ejecutar aplicaciones multicontenedor. Se utiliza un archivo `docker-compose.yml` para configurar los servicios de una aplicación, como bases de datos, servidores, etc., y luego se ejecutan con un solo comando.
 
 </details>
-
 🚨 🚨 ¿Sabemos qué es una imagen, un contenedor, un volumen y lo que hace el docker compose? 🚨 🚨
 
 ## 4. Flujo de trabajo en docker
