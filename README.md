@@ -5,8 +5,8 @@
 ## Índice
 
 1. [Introducción](#1-introducción)
-2. [Instalaciones](#2-instalaciones)
-3. [Conceptos Fundamentales](#3-conceptos-fundamentales)
+2. [Conceptos Fundamentales](#2-conceptos-fundamentales)
+3. [Instalaciones](#3-instalaciones)
 4. [Flujo de Trabajo en Docker](#4-flujo-de-trabajo-en-docker)
 5. [Comandos Esenciales](#5-comandos-esenciales)
 6. [Recursos Adicionales](#11-recursos-adicionales)
@@ -53,39 +53,7 @@
 
 </details>
 
-## 2. Instalaciones
-
-### Instalar Docker en varios sistemas operativos
-
-- **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** (para Windows y macOS)
-  - Es una interfaz gráfica (o aplicación local) que facilita la creación, ejecución y gestión de contenedores en tu computadora.Es una plataforma todo-en-uno que incluye:
-    
-    - `Docker Engine`: El motor que permite construir y correr contenedores localmente
-    - `Docker Compose`: Una herramienta para definir y correr aplicaciones multi-contenedor mediante un archivo docker-compose.yml
-    - `Máquina virtual`: En macOS y Windows, Docker Desktop utiliza una VM (máquina virtual) para ejecutar Linux, ya que Docker depende del kernel de Linux
-      
-  - Entre las funciones de Docker Desktop está construir imágenes Docker desde un Dockerfile y ejecutar y gestionar contenedores localmente.
-    <kbd><img src="https://jorgebenitezlopez.com/github/docker-container.png" style="border:1px solid grey"></kbd>
-
-- **Docker CLI** (para Linux)
-  - En Linux, Docker se instala directamente como una herramienta de línea de comandos (CLI) que se gestiona desde el terminal.
-  - Los comandos permiten construir imágenes, ejecutar contenedores y gestionar el ecosistema de manera directa.
-  - Instrucciones para instalar en:[Ubuntu](https://docs.docker.com/engine/install/ubuntu/), [CentOS](https://docs.docker.com/engine/install/centos/), [Debian](https://docs.docker.com/engine/install/debian/)
-    <kbd><img src="./img/terminaldocker.png" style="border:1px solid grey"></kbd>
-
-- **[Docker Hub](https://hub.docker.com/)** (para la nube)
-  - Es el repositorio oficial donde se almacenan y comparten imágenes de Docker.Los usuarios pueden descargar imágenes públicas o almacenar las suyas propias.Es un recurso clave para obtener imágenes oficiales de sistemas operativos, aplicaciones y servicios.Su función es similar a un repositorio de código como GitHub o GitLab.
-  - Docker Hub nos permite:
-    - Almacenar y compartir imágenes Docker públicamente o de manera privada (2 con la cuenta privada)
-    - Distribuir tus imágenes a otras personas o sistemas (en un entorno de producción, CI/CD, etc.)
-    - Descargar imágenes preconstruidas de aplicaciones populares (Nginx, Redis, MongoDB, Node.js, etc.), que puedes usar como base para tus propios contenedores
-
-<kbd><img src="https://jorgebenitezlopez.com/github/dockerhub.png" style="border:1px solid grey"></kbd>
-
-### <a href="/PROBLEMAS_PROCESADORES.md" target="_blank">¿Tienes problemas con los procesadores?</a>
-
-
-## 3. Conceptos fundamentales
+## 2. Conceptos fundamentales
 
 <kbd><img src="./img/conceptosdocker.png" style="border:1px solid grey"></kbd>
 
@@ -125,6 +93,38 @@
 
 </details>
 🚨 🚨 ¿Sabemos qué es una imagen, un contenedor, un volumen y lo que hace el docker compose? 🚨 🚨
+
+## 3. Instalaciones
+
+### Instalar Docker en varios sistemas operativos
+
+- **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** (para Windows y macOS)
+  - Es una interfaz gráfica (o aplicación local) que facilita la creación, ejecución y gestión de contenedores en tu computadora.Es una plataforma todo-en-uno que incluye:
+    
+    - `Docker Engine`: El motor que permite construir y correr contenedores localmente
+    - `Docker Compose`: Una herramienta para definir y correr aplicaciones multi-contenedor mediante un archivo docker-compose.yml
+    - `Máquina virtual`: En macOS y Windows, Docker Desktop utiliza una VM (máquina virtual) para ejecutar Linux, ya que Docker depende del kernel de Linux
+      
+  - Entre las funciones de Docker Desktop está construir imágenes Docker desde un Dockerfile y ejecutar y gestionar contenedores localmente.
+    <kbd><img src="https://jorgebenitezlopez.com/github/docker-container.png" style="border:1px solid grey"></kbd>
+
+- **Docker CLI** (para Linux)
+  - En Linux, Docker se instala directamente como una herramienta de línea de comandos (CLI) que se gestiona desde el terminal.
+  - Los comandos permiten construir imágenes, ejecutar contenedores y gestionar el ecosistema de manera directa.
+  - Instrucciones para instalar en:[Ubuntu](https://docs.docker.com/engine/install/ubuntu/), [CentOS](https://docs.docker.com/engine/install/centos/), [Debian](https://docs.docker.com/engine/install/debian/)
+    <kbd><img src="./img/terminaldocker.png" style="border:1px solid grey"></kbd>
+
+- **[Docker Hub](https://hub.docker.com/)** (para la nube)
+  - Es el repositorio oficial donde se almacenan y comparten imágenes de Docker.Los usuarios pueden descargar imágenes públicas o almacenar las suyas propias.Es un recurso clave para obtener imágenes oficiales de sistemas operativos, aplicaciones y servicios.Su función es similar a un repositorio de código como GitHub o GitLab.
+  - Docker Hub nos permite:
+    - Almacenar y compartir imágenes Docker públicamente o de manera privada (2 con la cuenta privada)
+    - Distribuir tus imágenes a otras personas o sistemas (en un entorno de producción, CI/CD, etc.)
+    - Descargar imágenes preconstruidas de aplicaciones populares (Nginx, Redis, MongoDB, Node.js, etc.), que puedes usar como base para tus propios contenedores
+
+<kbd><img src="https://jorgebenitezlopez.com/github/dockerhub.png" style="border:1px solid grey"></kbd>
+
+### <a href="/PROBLEMAS_PROCESADORES.md" target="_blank">¿Tienes problemas con los procesadores?</a>
+
 
 ## 4. Flujo de trabajo en docker
 
