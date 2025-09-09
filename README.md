@@ -19,14 +19,16 @@
 
 [Docker (WEB)](https://www.docker.com/) 🌐: Develop faster. Run anywhere. Accelerate how you build, share, and run applications
 
-🚀 Docker permite empaquetar aplicaciones con todas sus dependencias, como librerías y versiones de lenguajes, en contenedores ligeros. Esto asegura que la aplicación funcione igual en cualquier entorno, evitando problemas de compatibilidad entre desarrollo y producción.
+> ¿Qué es Docker? 👉 un conjunto de herramientas, servicios y entornos que permiten desarrollar, ejecutar o gestionar aplicaciones.
 
-👨‍💻 Solomon Hykes quería que el código de los programadores funcionara igual en desarrollo y producción. Docker hizo que los contenedores fueran fáciles de usar, aunque ya existían en Linux. Aunque lanzaron Docker gratis y fue popular, la empresa tuvo problemas para ganar dinero y terminó vendiendo parte de su negocio en 2020.
+🚀 Docker permite **empaquetar aplicaciones con todas sus dependencias**, como librerías y versiones de lenguajes, en contenedores ligeros. Esto asegura que la aplicación **funcione igual en cualquier entorno**, evitando problemas de compatibilidad entre desarrollo y producción.
+
+👨‍💻 El creador de Docker, Solomon Hykes, quería resolver justamente ese problema: que el código funcionara de la misma forma en desarrollo y en producción. Aunque los contenedores ya existían en Linux, **Docker los hizo simples y accesibles para todos**. Su popularidad creció rápidamente, pero la empresa tuvo dificultades para monetizar y en 2020 vendió parte de su negocio.
 
 💻 Antes de Docker, las máquinas virtuales (VMs) eran la opción para aislar aplicaciones. Las VMs emulan un sistema operativo completo, lo que las hace más pesadas y lentas. Además, ocupan más espacio y consumen más recursos que Docker, lo que dificulta la escalabilidad y el rendimiento.
 
 <kbd>
-  <img src="./img/memedocker.png" style="width: 100%; border:1px solid grey"">
+  <img src="./img/memedocker.png" style='width: 70%; display: block; margin: 0 auto;border:1px solid grey'">
 </kbd>
 
 🚨 ¿Entendemos para qué sirve? ¿Qué puede pasar en el caso de no usar? ¿Qué se usaba antes? 🚨
@@ -35,20 +37,16 @@
 
 ¿Todavía con dudas? quizás esta métafora te pueda ayudar...
 
-<details>
-  <summary> 
 
-  ### 🧙‍♂️ Cápsula del tiempo
-  </summary>
 
-    
+  > ### 🧙‍♂️ Cápsula del tiempo
   > 
   > Docker es como una cápsula del tiempo que congela tu aplicación con todo lo necesario para que siempre funcione igual, aquí o en cualquier otro sitio.
-  
+  >
   >  - Guarda no solo tu código, sino también el sistema operativo base, librerías, runtimes y dependencias.
   > - Esa “foto” (la imagen) siempre se comportará igual, sin importar si pasan meses o años.
   > - Cuando corres el contenedor, básicamente “revives” ese mismo entorno exacto en el que funcionaba tu proyecto.
-  
+  >
   > 👉 La diferencia con una máquina virtual es que Docker no “congela” un ordenador entero con su kernel, sino que empaqueta solo lo necesario para tu app 💁‍♂️mucho más ligero y portátil.
 
 </details>
@@ -60,24 +58,26 @@
 📖 **Dockerfile**: Es como una receta que especifica, paso a paso, cómo preparar un entorno en el que se ejecutará una aplicación.
 
 🖼️ **Imágenes**: Una imagen es una plantilla que contiene todo lo necesario para ejecutar un contenedor: el código de la aplicación, el entorno de ejecución, las dependencias, etc. Las imágenes pueden ser compartidas a través de repositorios como **[Docker Hub](https://hub.docker.com/)**. Las imágenes se crean a partir de un Dockerfile y se pueden ejecutar como contenedores.
+>
+> Una imagen de Docker no es magia, son archivos en tu disco que contienen:
+>
+>- Sistema base + Dependencias y librerías + Tu código + Metadatos
+
 
 📦 **Contenedores**: Un contenedor es una instancia en ejecución de una imagen. Es el entorno aislado en el que se ejecuta la aplicación. Cada contenedor tiene su propio sistema de archivos, procesos, redes y espacio de CPU/memoria. Piensa en el contenedor como una "caja" donde vive y se ejecuta la aplicación, separada del resto del sistema.
 
+>El contenedor es la imagen en ejecución
+
+
 ¿Todavía con dudas? quizás esta métafora te pueda ayudar...
-<details>
-  <summary> 
-    
-  ### 🥣 Metáfora Cocina
-  </summary> 
-  
+ 
+> ### 🥣 Metáfora Cocina  
 > Es habitual que se confundan los términos de imágen y contenedor e incluso usarse únicamente el término contenedor para hacer referencia a ambos. Pero la realidad es que nunca se puede construir un contenedor o descargar uno, ya que los contenedores solo existen durante el tiempo de ejecución. Las imágenes, por otro lado, son archivos inmutables: no puedes editar una imagen después de haberla creado. 
->
-> 🚨 🚨 **Metáfora de la cocina** 🚨 🚨
 >
 > La `imagen` es un plato pre-cocinado y congelado.
 >
 > El `contenedor` es el delicioso manjar.
-</details>
+
 <details>
   <summary>
     
