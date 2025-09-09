@@ -33,10 +33,35 @@
 
 🚨 ¿Entendemos para qué sirve? ¿Qué puede pasar en el caso de no usar? ¿Qué se usaba antes? 🚨
 
+## 2. Conceptos fundamentales
+
+<kbd><img src="./img/conceptosdocker.png" style="border:1px solid grey"></kbd>
+
+📖 **Dockerfile**: Es como una receta que especifica, paso a paso, cómo preparar un entorno en el que se ejecutará una aplicación.
+
+🖼️ **Imágenes**: Una imagen es una plantilla que contiene todo lo necesario para ejecutar un contenedor: el código de la aplicación, el entorno de ejecución, las dependencias, etc. Las imágenes pueden ser compartidas a través de repositorios como **[Docker Hub](https://hub.docker.com/)**. Las imágenes se crean a partir de un Dockerfile y se pueden ejecutar como contenedores.
+>[!NOTE]
+> Una imagen de Docker no es magia, son archivos en tu disco que contienen:
+>
+>- Sistema base + Dependencias y librerías + Tu código + Metadatos
 
 
-¿Todavía con dudas? quizás esta métafora te pueda ayudar...
+📦 **Contenedores**: Un contenedor es una instancia en ejecución de una imagen. Es el entorno aislado en el que se ejecuta la aplicación. Cada contenedor tiene su propio sistema de archivos, procesos, redes y espacio de CPU/memoria. Piensa en el contenedor como una "caja" donde vive y se ejecuta la aplicación, separada del resto del sistema.
 
+> [!NOTE]
+> El contenedor es la imagen en ejecución, levantada, activa.
+> 
+> Una imagen se convierte en contenedor cuando Docker la levanta y la hace funcionar.
+
+
+ ### ¿Todavía con dudas? quizás estas métaforas te puedan ayudar...
+
+> ### 🥣 Metáfora Cocina  
+> Es habitual que se confundan los términos de imágen y contenedor e incluso usarse únicamente el término contenedor para hacer referencia a ambos. Pero la realidad es que nunca se puede construir un contenedor o descargar uno, ya que los contenedores solo existen durante el tiempo de ejecución. Las imágenes, por otro lado, son archivos inmutables: no puedes editar una imagen después de haberla creado. 
+>
+> La `imagen` es un plato pre-cocinado y congelado.
+>
+> El `contenedor` es el delicioso manjar.
 
 
   > ### 🧙‍♂️ Cápsula del tiempo
@@ -49,47 +74,16 @@
   >
   > 👉 La diferencia con una máquina virtual es que Docker no “congela” un ordenador entero con su kernel, sino que empaqueta solo lo necesario para tu app 💁‍♂️mucho más ligero y portátil.
 
-</details>
 
-## 2. Conceptos fundamentales
-
-<kbd><img src="./img/conceptosdocker.png" style="border:1px solid grey"></kbd>
-
-📖 **Dockerfile**: Es como una receta que especifica, paso a paso, cómo preparar un entorno en el que se ejecutará una aplicación.
-
-🖼️ **Imágenes**: Una imagen es una plantilla que contiene todo lo necesario para ejecutar un contenedor: el código de la aplicación, el entorno de ejecución, las dependencias, etc. Las imágenes pueden ser compartidas a través de repositorios como **[Docker Hub](https://hub.docker.com/)**. Las imágenes se crean a partir de un Dockerfile y se pueden ejecutar como contenedores.
->
-> Una imagen de Docker no es magia, son archivos en tu disco que contienen:
->
->- Sistema base + Dependencias y librerías + Tu código + Metadatos
-
-
-📦 **Contenedores**: Un contenedor es una instancia en ejecución de una imagen. Es el entorno aislado en el que se ejecuta la aplicación. Cada contenedor tiene su propio sistema de archivos, procesos, redes y espacio de CPU/memoria. Piensa en el contenedor como una "caja" donde vive y se ejecuta la aplicación, separada del resto del sistema.
-
->El contenedor es la imagen en ejecución
-
-
-¿Todavía con dudas? quizás esta métafora te pueda ayudar...
- 
-> ### 🥣 Metáfora Cocina  
-> Es habitual que se confundan los términos de imágen y contenedor e incluso usarse únicamente el término contenedor para hacer referencia a ambos. Pero la realidad es que nunca se puede construir un contenedor o descargar uno, ya que los contenedores solo existen durante el tiempo de ejecución. Las imágenes, por otro lado, son archivos inmutables: no puedes editar una imagen después de haberla creado. 
->
-> La `imagen` es un plato pre-cocinado y congelado.
->
-> El `contenedor` es el delicioso manjar.
-
-<details>
-  <summary>
     
-  ### 🤷‍♂️¿Si lo relacionamos con POO, qué sería una clase y qué sería un objeto?
-  </summary>
-  
-  
- - 💾 **Volúmenes** : Los volúmenes en Docker se utilizan para persistir datos más allá del ciclo de vida de los contenedores, los cuales son efímeros y pueden ser eliminados fácilmente. Los volúmenes permiten que los datos persistan incluso después de que el contenedor haya sido destruido. Además, también se pueden utilizar para mapear código entre el sistema anfitrión y el contenedor, lo que facilita la edición en tiempo real dentro del contenedor.
+> ### 🤷‍♂️ Programación Orientada a Objetos
+>
+> ¿Si lo relacionamos con POO, qué sería una clase y qué sería un objeto?  
+>   - 💾 **Volúmenes** : Los volúmenes en Docker se utilizan para persistir datos más allá del ciclo de vida de los contenedores, los cuales son efímeros y pueden ser eliminados fácilmente. Los volúmenes permiten que los >datos persistan incluso después de que el contenedor haya sido destruido. Además, también se pueden utilizar para mapear código entre el sistema anfitrión y el contenedor, lo que facilita la edición en tiempo real dentro >del contenedor.
+>
+>- 📜 **Docker Compose**: Docker Compose es una herramienta que permite definir y ejecutar aplicaciones multicontenedor. Se utiliza un archivo `docker-compose.yml` para configurar los servicios de una aplicación, como >bases de datos, servidores, etc., y luego se ejecutan con un solo comando.
+>
 
-- 📜 **Docker Compose**: Docker Compose es una herramienta que permite definir y ejecutar aplicaciones multicontenedor. Se utiliza un archivo `docker-compose.yml` para configurar los servicios de una aplicación, como bases de datos, servidores, etc., y luego se ejecutan con un solo comando.
-
-</details>
 🚨 🚨 ¿Sabemos qué es una imagen, un contenedor, un volumen y lo que hace el docker compose? 🚨 🚨
 
 ## 3. Instalaciones
