@@ -69,9 +69,7 @@
     
   ### 🥣 Metáfora Cocina
   </summary> 
-
   
-
 > Es habitual que se confundan los términos de imágen y contenedor e incluso usarse únicamente el término contenedor para hacer referencia a ambos. Pero la realidad es que nunca se puede construir un contenedor o descargar uno, ya que los contenedores solo existen durante el tiempo de ejecución. Las imágenes, por otro lado, son archivos inmutables: no puedes editar una imagen después de haberla creado. 
 >
 > 🚨 🚨 **Metáfora de la cocina** 🚨 🚨
@@ -81,7 +79,7 @@
 > El `contenedor` es el delicioso manjar.
 </details>
 <details>
-  <summary> 
+  <summary>
     
   ### 🤷‍♂️¿Si lo relacionamos con POO, qué sería una clase y qué sería un objeto?
   </summary>
