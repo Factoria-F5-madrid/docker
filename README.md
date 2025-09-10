@@ -56,7 +56,10 @@
  📜 **Docker Compose**: Docker Compose es una herramienta que permite definir y ejecutar aplicaciones multicontenedor. Se utiliza un archivo `docker-compose.yml` para configurar los servicios de una aplicación, como bases de datos, servidores, etc., y luego se ejecutan con un solo comando.
  
   💾 **Volúmenes** : Los volúmenes en Docker se utilizan para persistir datos más allá del ciclo de vida de los contenedores, los cuales son efímeros y pueden ser eliminados fácilmente. Los volúmenes permiten que los datos persistan incluso después de que el contenedor haya sido destruido. Además, también se pueden utilizar para mapear código entre el sistema anfitrión y el contenedor, lo que facilita la edición en tiempo real dentro del contenedor.
-
+  
+  > [!NOTE]
+  > Un volumen es un directorio en el sistema de archivos del host que Docker administra
+  
 
 
  ### ¿Todavía con dudas? quizás estas métaforas te puedan ayudar...
