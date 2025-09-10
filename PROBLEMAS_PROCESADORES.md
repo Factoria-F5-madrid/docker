@@ -14,6 +14,22 @@
 
       Las imágenes de Docker se crean y optimizan para una arquitectura específica. Esto significa que una imagen creada para amd64 (procesadores Intel y AMD de 64 bits) no se puede ejecutar de forma nativa en arm64 (procesadores ARM).  Comando para construir una imagen multiarquitectura:
 
-      docker buildx build --platform linux/amd64,linux/arm64 -t mi-imagen:latest .
+      docker buildx build --platform linux/amd64,linux/arm64 -t mi-imagen:latest .**
+
+- **Si falla el WSL, hacer la instalación offline siguiendo los pasos aquí:
+https://learn.microsoft.com/en-us/windows/wsl/install**
+
+-**Paso a paso:**
+
+- Descargar desde este link https://github.com/microsoft/wsl/releases el ejecutable desde assets, el seleccionado en la captura de pantalla de aquí abajo:
+
+<img width="970" height="349" alt="Captura de pantalla 2025-09-10 a las 12 28 25" src="https://github.com/user-attachments/assets/68f1ca27-4ad4-441e-8512-2a6d3dac660c" />
+
+- Una vez descargado y ejecutado, pon este comando en terminal (powershell admin):
+```bash
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+
 
 🚨 🚨 ¿Entendéis lo que necesitamos? ¿Entendís el problema de la arquitectura de tu procesador? 🚨 🚨
