@@ -60,8 +60,6 @@
   > [!NOTE]
   > Un volumen es un directorio en el sistema de archivos del host que Docker administra
   
-
-
  ### ¿Todavía con dudas? quizás estas métaforas te puedan ayudar...
 
 > ### 🥣 Metáfora Cocina  
